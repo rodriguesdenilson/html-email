@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <title>HTML Email Development Newsletter</title>
+
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, table, td, a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    table, td {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    img {
+      -ms-interpolation-mode: bicubic;
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+
+    /* Custom Properties for Dark Mode */
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+      --bg-body: #D8DBDB;
+      --bg-wrapper: #f6faff;
+      --border-color: #37a28f;
+      --text-color: #565859;
+      --heading-color: #2b2b2b;
+      --button-bg: #37a28f;
+      --button-hover: #3db5a0;
+      --button-text: #ffffff;
+      --link-color: #2b9684;
+      --link-hover: #fe6b58;
+      --divider-color: #fe6b58;
+    }
+
+    /* Dark Mode Support */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-body: #1a1a1a;
+        --bg-wrapper: #2d2d2d;
+        --border-color: #3db5a0;
+        --text-color: #e0e0e0;
+        --heading-color: #ffffff;
+        --button-bg: #3db5a0;
+        --button-hover: #37a28f;
+        --link-color: #3db5a0;
+        --link-hover: #fe6b58;
+      }
+
+      .dark-mode-bg {
+        background-color: #2d2d2d !important;
+      }
+
+      .dark-mode-text {
+        color: #e0e0e0 !important;
+      }
+
+      .dark-mode-heading {
+        color: #ffffff !important;
+      }
+    }
+
+    /* Base Styles */
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      min-width: 100% !important;
+      background-color: var(--bg-body);
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--text-color);
+    }
+
+    /* Prevent Gmail from changing font sizes */
+    u ~ div .email-container {
+      min-width: 100vw;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      margin: 0;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--heading-color);
+    }
+
+    h2 {
+      font-size: 28px;
+      letter-spacing: 1px;
+      margin: 20px 0 8px;
+    }
+
+    p {
+      margin: 0 0 15px;
+      line-height: 26px;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+    }
+
+    /* ============================================
+       CLASSES - USE ONLY FOR WHAT CAN'T BE INLINED
+       ============================================ */
+
+    /* Hover Effect - CAN'T be inlined */
+    .button-a:hover {
+      background-color: #3db5a0 !important;
+      border-color: #3db5a0 !important;
+    }
+
+    /* Mobile Responsive Styles */
+    @media screen and (max-width: 600px) {
+      /* Force full width */
+      .email-container {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      /* Stack columns */
+      .stack-column {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        direction: ltr !important;
+      }
+
+      /* Center buttons on mobile */
+      .button-wrapper {
+        text-align: center !important;
+      }
+
+      .button-wrapper table {
+        margin: 0 auto !important;
+      }
+
+      /* Adjust padding */
+      .mobile-padding {
+        padding: 20px !important;
+      }
+
+      /* Font size adjustments */
+      h2 {
+        font-size: 24px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+      }
+
+      /* Image adjustments */
+      .mobile-img {
+        max-width: 155px !important;
+        height: auto !important;
+      }
+
+      /* Button adjustments */
+      .button-a {
+        font-size: 18px !important;
+        padding: 12px 18px !important;
+      }
+
+      /* Hide on mobile */
+      .mobile-hide {
+        display: none !important;
+        max-height: 0 !important;
+        overflow: hidden !important;
+        mso-hide: all !important;
+      }
+
+      /* Show only on mobile */
+      .mobile-only {
+        display: block !important;
+        max-height: none !important;
+        visibility: visible !important;
+      }
+    }
+  </style>
+</head>
+
+<body role="article" aria-label="HTML Email Development Newsletter" style="margin: 0; padding: 0; background-color: #D8DBDB;">
+
+  <!-- Preheader Text (hidden on display) -->
+  <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+    Master email development with mobile-friendly, responsive design techniques for all email clients.
+  </div>
+
+  <!-- Gmail Spacing Fix -->
+  <div style="display: none; max-height: 0px; overflow: hidden;">
+    &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+  </div>
+
+  <!-- Email Body -->
+  <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #D8DBDB; padding: 20px 0;">
+
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #D8DBDB;">
+    <tr>
+    <td>
+    <![endif]-->
+
+    <!-- Email Container -->
+    <table role="presentation" class="email-container" cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="margin: auto; max-width: 600px; width: 100%; background-color: #f6faff; box-shadow: 0 0 10px rgba(97, 110, 121, 0.3); border-top: 10px solid #37a28f; border-radius: 5px 5px 10px 10px;">
+
+      <!-- Header / Logo -->
+      <tr>
+        <td role="banner" style="padding: 20px 0; text-align: center; background-color: #f6faff;" class="dark-mode-bg">
+          <a href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=logo" target="_blank" aria-label="Visit our website">
+            <img src="https://i.ibb.co/JtckNqn/logo.png" width="250" alt="HTML5 Email Development Logo" style="width: 100%; max-width: 250px; height: auto; display: block; margin: 0 auto; font-family: sans-serif; font-size: 18px; line-height: 24px; color: #565859;">
+          </a>
+        </td>
+      </tr>
+
+      <!-- Hero Banner -->
+      <tr>
+        <td style="padding: 0; background-color: #f6faff;" class="dark-mode-bg">
+          <a href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=hero_banner" target="_blank">
+            <img src="https://i.ibb.co/zQ558kP/banner.png" width="600" alt="Email Development Course Banner" style="width: 100%; max-width: 600px; height: auto; display: block; border: 0; font-family: sans-serif; font-size: 18px; line-height: 24px; color: #565859;">
+          </a>
+        </td>
+      </tr>
+
+      <!-- Main Content -->
+      <tr>
+        <td role="main" style="background-color: #f6faff; padding: 20px;" class="dark-mode-bg mobile-padding">
+
+          <!-- Three Column Section -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <!-- Column 1 -->
+              <td class="stack-column" width="33.33%" valign="top" style="padding: 20px 10px; text-align: center;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="text-align: center; padding-bottom: 15px;">
+                      <a href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=column1_image" target="_blank">
+                        <img src="https://i.ibb.co/tHQy3gL/mouse.png" width="135" alt="Email Development" class="mobile-img" style="width: 100%; max-width: 135px; height: auto; display: inline-block; border: 0;">
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">
+                      <h2 class="dark-mode-heading" style="margin: 0 0 10px; font-size: 28px; font-weight: 700; letter-spacing: 1px; color: #2b2b2b;">Email Development</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center; padding-bottom: 15px;">
+                      <p class="dark-mode-text" style="margin: 0 0 15px; line-height: 26px; font-size: 18px; color: #565859;">There are many different email clients to consider when developing your email template.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="button-wrapper" style="text-align: center;">
+                      <!-- Bulletproof Button -->
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: 0 auto;">
+                        <tr>
+                          <td style="text-align: center;">
+                            <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=cta_button" style="height:50px;v-text-anchor:middle;width:180px;" arcsize="24%" stroke="f" fillcolor="#37a28f">
+                              <w:anchorlock/>
+                              <center style="color:#ffffff;font-family:sans-serif;font-size:20px;font-weight:600;">Learn More</center>
+                            </v:roundrect>
+                            <![endif]-->
+                            <!--[if !mso]><!-->
+                            <a class="button-a" href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=cta_button" target="_blank" style="background-color: #37a28f; border: 1px solid #37a28f; color: #ffffff; display: inline-block; font-size: 20px; font-weight: 600; letter-spacing: 1px; line-height: 1.1; padding: 14px 20px; text-align: center; text-decoration: none; border-radius: 6px;">
+                              <span style="color: #ffffff;">Learn More</span>
+                            </a>
+                            <!--<![endif]-->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <!-- Column 2 -->
+              <td class="stack-column" width="33.33%" valign="top" style="padding: 20px 10px; text-align: center;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="text-align: center; padding-bottom: 15px;">
+                      <a href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=column2_image" target="_blank">
+                        <img src="https://i.ibb.co/42MJn1V/phone.png" width="135" alt="Mobile Friendly Design" class="mobile-img" style="width: 100%; max-width: 135px; height: auto; display: inline-block; border: 0;">
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">
+                      <h2 class="dark-mode-heading" style="margin: 0 0 10px; font-size: 28px; font-weight: 700; letter-spacing: 1px; color: #2b2b2b;">Mobile Friendly</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center; padding-bottom: 15px;">
+                      <p class="dark-mode-text" style="margin: 0 0 15px; line-height: 26px; font-size: 18px; color: #565859;">Most emails are opened on mobile devices today, so make sure your design is mobile friendly.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="button-wrapper" style="text-align: center;">
+                      <!-- Bulletproof Button -->
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: 0 auto;">
+                        <tr>
+                          <td style="text-align: center;">
+                            <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=cta_button" style="height:50px;v-text-anchor:middle;width:200px;" arcsize="24%" stroke="f" fillcolor="#37a28f">
+                              <w:anchorlock/>
+                              <center style="color:#ffffff;font-family:sans-serif;font-size:20px;font-weight:600;">HTML Email</center>
+                            </v:roundrect>
+                            <![endif]-->
+                            <!--[if !mso]><!-->
+                            <a class="button-a" href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=cta_button" target="_blank" style="background-color: #37a28f; border: 1px solid #37a28f; color: #ffffff; display: inline-block; font-size: 20px; font-weight: 600; letter-spacing: 1px; line-height: 1.1; padding: 14px 20px; text-align: center; text-decoration: none; border-radius: 6px;">
+                              <span style="color: #ffffff;">HTML Email</span>
+                            </a>
+                            <!--<![endif]-->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <!-- Column 3 -->
+              <td class="stack-column" width="33.33%" valign="top" style="padding: 20px 10px; text-align: center;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="text-align: center; padding-bottom: 15px;">
+                      <a href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=column3_image" target="_blank">
+                        <img src="https://i.ibb.co/RD0sR6V/computer.png" width="135" alt="Desktop Email Clients" class="mobile-img" style="width: 100%; max-width: 135px; height: auto; display: inline-block; border: 0;">
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">
+                      <h2 class="dark-mode-heading" style="margin: 0 0 10px; font-size: 28px; font-weight: 700; letter-spacing: 1px; color: #2b2b2b;">Desktop Clients</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center; padding-bottom: 15px;">
+                      <p class="dark-mode-text" style="margin: 0 0 15px; line-height: 26px; font-size: 18px; color: #565859;">For desktop email clients like Outlook, we'll need to pay special attention once we use tables.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="button-wrapper" style="text-align: center;">
+                      <!-- Bulletproof Button -->
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: 0 auto;">
+                        <tr>
+                          <td style="text-align: center;">
+                            <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=cta_button" style="height:50px;v-text-anchor:middle;width:220px;" arcsize="24%" stroke="f" fillcolor="#37a28f">
+                              <w:anchorlock/>
+                              <center style="color:#ffffff;font-family:sans-serif;font-size:20px;font-weight:600;">Development</center>
+                            </v:roundrect>
+                            <![endif]-->
+                            <!--[if !mso]><!-->
+                            <a class="button-a" href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=cta_button" target="_blank" style="background-color: #37a28f; border: 1px solid #37a28f; color: #ffffff; display: inline-block; font-size: 20px; font-weight: 600; letter-spacing: 1px; line-height: 1.1; padding: 14px 20px; text-align: center; text-decoration: none; border-radius: 6px;">
+                              <span style="color: #ffffff;">Development</span>
+                            </a>
+                            <!--<![endif]-->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Divider -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <td style="padding: 20px 10px;">
+                <hr style="border: 0; border-top: 2px solid #fe6b58; width: 100%; margin: 0;">
+              </td>
+            </tr>
+          </table>
+
+          <!-- Two Column Section -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <!-- Image Column -->
+              <td class="stack-column" width="50%" valign="middle" style="padding: 20px 10px;">
+                <a href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=twocol_image" target="_blank">
+                  <img src="https://i.ibb.co/NKdYy92/pie-chart.png" width="260" alt="Email Design Statistics" style="width: 100%; max-width: 260px; height: auto; display: block; margin: 0 auto; border: 0;">
+                </a>
+              </td>
+
+              <!-- Content Column -->
+              <td class="stack-column" width="50%" valign="middle" style="padding: 20px 10px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding-bottom: 10px;">
+                      <h2 class="dark-mode-heading" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: 1px; color: #2b2b2b;">Latest Email Design</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 15px;">
+                      <p class="dark-mode-text" style="margin: 0; line-height: 26px; font-size: 18px; color: #565859;">There are a lot of email clients to consider when choosing a design width but 600px is the most common.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="button-wrapper" style="text-align: center;">
+                      <!-- Bulletproof Button -->
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: 0 auto;">
+                        <tr>
+                          <td style="text-align: center;">
+                            <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=cta_button" style="height:50px;v-text-anchor:middle;width:300px;" arcsize="24%" stroke="f" fillcolor="#37a28f">
+                              <w:anchorlock/>
+                              <center style="color:#ffffff;font-family:sans-serif;font-size:20px;font-weight:600;">Email Design Course</center>
+                            </v:roundrect>
+                            <![endif]-->
+                            <!--[if !mso]><!-->
+                            <a class="button-a" href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=cta_button" target="_blank" style="background-color: #37a28f; border: 1px solid #37a28f; color: #ffffff; display: inline-block; font-size: 20px; font-weight: 600; letter-spacing: 1px; line-height: 1.1; padding: 14px 20px; text-align: center; text-decoration: none; border-radius: 6px;">
+                              <span style="color: #ffffff;">Email Design Course</span>
+                            </a>
+                            <!--<![endif]-->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Divider -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <td style="padding: 20px 10px;">
+                <hr style="border: 0; border-top: 2px solid #fe6b58; width: 100%; margin: 0;">
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+
+      <!-- Footer / Social Links -->
+      <tr>
+        <td role="contentinfo" style="background-color: #f6faff; padding: 20px; text-align: center;" class="dark-mode-bg">
+
+          <!-- Social Icons -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: 0 auto 20px;">
+            <tr>
+              <td style="padding: 0 10px;">
+                <a href="https://facebook.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter" target="_blank" aria-label="Facebook">
+                  <img src="https://i.ibb.co/5cp6Gtb/facebook.png" width="40" alt="Facebook" style="width: 40px; height: auto; display: block; border: 0;">
+                </a>
+              </td>
+              <td style="padding: 0 10px;">
+                <a href="https://twitter.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter" target="_blank" aria-label="Twitter">
+                  <img src="https://i.ibb.co/m4PgXq6/twitter.png" width="40" alt="Twitter" style="width: 40px; height: auto; display: block; border: 0;">
+                </a>
+              </td>
+              <td style="padding: 0 10px;">
+                <a href="https://youtube.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter" target="_blank" aria-label="YouTube">
+                  <img src="https://i.ibb.co/Ttf0YmH/youtube.png" width="40" alt="YouTube" style="width: 40px; height: auto; display: block; border: 0;">
+                </a>
+              </td>
+              <td style="padding: 0 10px;">
+                <a href="https://instagram.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter" target="_blank" aria-label="Instagram">
+                  <img src="https://i.ibb.co/8brZJJt/instagram.png" width="40" alt="Instagram" style="width: 40px; height: auto; display: block; border: 0;">
+                </a>
+              </td>
+              <td style="padding: 0 10px;">
+                <a href="https://linkedin.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter" target="_blank" aria-label="LinkedIn">
+                  <img src="https://i.ibb.co/3zn6mW3/linkedin.png" width="40" alt="LinkedIn" style="width: 40px; height: auto; display: block; border: 0;">
+                </a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Contact Information -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+            <tr>
+              <td style="text-align: center; font-size: 16px; line-height: 28px; color: #2b9684; font-weight: 500; padding-bottom: 20px;">
+                <a href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=footer_website" target="_blank" style="color: #2b9684; text-decoration: none;">www.myportfolio.com</a><br>
+                <a href="tel:+18005555555" style="color: #2b9684; text-decoration: none;">1-800-555-5555</a><br>
+                <a href="mailto:name@myportfolio.com" style="color: #2b9684; text-decoration: none;">name@myportfolio.com</a><br>
+                <span style="color: #565859;">2 Town Road - City - State 99999</span><br>
+                <a href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=unsubscribe" target="_blank" style="color: #2b9684; text-decoration: none;">Unsubscribe</a> |
+                <a href="https://example.com?utm_source=email&utm_medium=email&utm_campaign=html_email_newsletter&utm_content=preferences" target="_blank" style="color: #2b9684; text-decoration: none;">Preferences</a>
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+
+    </table>
+    <!-- End Email Container -->
+
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+
+  </center>
+</body>
+</html>

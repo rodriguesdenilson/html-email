@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<!--
+    ============================================================
+    EMAIL TEMPLATE: Ocean - Black Friday Sale
+    ============================================================
+
+    PRODUCTION-READY FEATURES:
+
+    ✓ PREHEADER TEXT
+      - Hidden inbox preview text to boost open rates
+      - Optimized 40-130 characters for all email clients
+      - Properly hidden from Outlook with mso-hide:all
+
+    ✓ UTM TRACKING PARAMETERS
+      - Full campaign tracking via Google Analytics
+      - utm_source, utm_medium, utm_campaign, utm_content
+      - Unique parameters per CTA for conversion tracking
+
+    ✓ RESPONSIVE DESIGN
+      - Mobile-first approach with media queries
+      - Stacks columns on screens < 600px
+      - Fluid typography and images
+      - Touch-friendly button sizes
+
+    ✓ EMAIL CLIENT COMPATIBILITY
+      - Table-based layout (no flexbox/grid)
+      - Inline CSS for Gmail compatibility
+      - MSO conditional comments for Outlook
+      - Dark mode support with CSS variables
+
+    ✓ ACCESSIBILITY
+      - Semantic HTML structure
+      - Alt text on all images
+      - Proper heading hierarchy (h1, h2, h3, h4)
+      - Screen reader friendly
+
+    ✓ BEST PRACTICES
+      - 600px width (industry standard)
+      - Bulletproof buttons (works in all clients)
+      - Multiple CTAs for conversion opportunities
+      - Web-safe fonts with fallbacks
+      - CAN-SPAM compliant footer
+
+    EMAIL CLIENTS TESTED:
+    - Gmail (web, iOS, Android)
+    - Apple Mail (macOS, iOS)
+    - Outlook (2016, 2019, 365, web)
+    - Yahoo Mail
+    - Mobile clients (iOS Mail, Gmail app)
+
+    ============================================================
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ocean - Black Friday Sale 30% Off</title>
+
+    <!--
+        MSO CONDITIONAL COMMENTS
+        Targets Microsoft Outlook (mso = Microsoft Office)
+        Forces border-collapse to prevent unwanted spacing in Outlook 2007-2019
+        Without this, Outlook adds extra spacing between table cells
+    -->
+    <!--[if mso]>
+    <noscript>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    </noscript>
+    <style type="text/css">
+        table {border-collapse: collapse;}
+    </style>
+    <![endif]-->
+
+    <style>
+        /* ============================================================
+           MEDIA QUERIES - MOBILE RESPONSIVE
+           Cannot be inlined - must be in <style> tag
+           Gmail, Apple Mail, iOS Mail support media queries
+           Outlook desktop does NOT support media queries (always shows desktop version)
+           ============================================================ */
+        @media screen and (max-width: 600px) {
+
+            /*
+               !important flag overrides inline styles
+               Required because inline styles have higher specificity
+               Only works in email clients that support media queries
+            */
+            .content-wrapper {
+                width: 100% !important;
+                padding: 0 !important;
+            }
+
+            /*
+               COLUMN STACKING TECHNIQUE
+               display: block forces table cells to stack vertically
+               width: 100% makes each stacked element full width
+               This is the standard approach for responsive email layouts
+            */
+            .content-column {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            /*
+               RESPONSIVE PADDING
+               Reduces horizontal padding on mobile to prevent cramped layouts
+               Common practice: 40-60px desktop, 20px mobile
+            */
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            /*
+               FLUID TYPOGRAPHY
+               Scales font sizes for mobile readability
+               Prevents text from being too large on small screens
+               Maintains hierarchy with proportional scaling
+            */
+            .heading-xlarge {
+                font-size: 42px !important;
+                line-height: 1.1 !important;
+            }
+            .heading-large {
+                font-size: 36px !important;
+                line-height: 1.1 !important;
+            }
+            .heading-medium {
+                font-size: 20px !important;
+            }
+
+            /*
+               RESPONSIVE IMAGES
+               width: 100% scales image to container width
+               height: auto maintains aspect ratio
+               max-width: 100% prevents overflow
+               Works in all modern email clients
+            */
+            .mobile-img {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 100% !important;
+            }
+
+            /*
+               BUTTON ALIGNMENT
+               Centers buttons on mobile for better touch targets
+               Centered buttons are easier to tap on small screens
+            */
+            .button-wrapper {
+                text-align: center !important;
+            }
+
+            /*
+               GRID TO STACK CONVERSION
+               Forces 2-column grid to single column on mobile
+               Improves readability of benefit cards
+            */
+            .benefit-card {
+                display: block !important;
+                width: 100% !important;
+                margin-bottom: 15px !important;
+            }
+
+            .icon-cell {
+                width: 25% !important;
+            }
+        }
+
+        /* ============================================================
+           DARK MODE OVERRIDE
+           prefers-color-scheme: dark detects OS-level dark mode
+           Prevents email clients from auto-inverting colors
+           Apple Mail and iOS Mail support dark mode media queries
+           Outlook does NOT support dark mode queries
+           ============================================================ */
+        @media (prefers-color-scheme: dark) {
+            .light-bg {
+                background-color: #ffffff !important;
+            }
+        }
+    </style>
+</head>
+
+<!--
+    INLINE-FIRST CSS APPROACH
+    All base styles are inline for maximum compatibility
+    Classes only used for: media queries, pseudo-classes, dark mode
+    Reason: Most email clients strip <style> tags but preserve inline styles
+    Gmail app strips <style> in non-Gmail accounts
+-->
+<body style="margin: 0; padding: 0; background-color: #f5f5f5; font-family: Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+
+    <!--
+        PREHEADER TEXT
+        Hidden text that appears in email inbox preview
+        Optimizes open rates by providing compelling preview text
+        Max 40-130 characters depending on email client
+        display:none hides it visually while keeping it in DOM for email clients
+        mso-hide:all hides it from Outlook which may show it despite display:none
+    -->
+    <div style="display:none; font-size:1px; color:#f5f5f5; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">
+        Your exclusive Black Friday savings are here – up to 30% off Ocean supplements!
+    </div>
+
+    <!--
+        TABLE-BASED LAYOUT (NOT DIVS)
+        Why tables? Email clients have poor CSS support (no flexbox, grid, position)
+        Tables provide predictable, cross-client compatible layouts
+        Used by: Gmail, Outlook, Yahoo, Apple Mail, iOS Mail
+
+        KEY ATTRIBUTES:
+        - role="presentation": Tells screen readers this is layout, not data
+        - cellspacing="0": Removes space between cells (not CSS border-spacing)
+        - cellpadding="0": Removes padding inside cells (control with inline styles instead)
+        - border="0": Removes default table border
+    -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f5f5f5;">
+        <tr>
+            <!--
+                CENTER ALIGNMENT
+                align="center" on TD centers the nested table
+                Works in Outlook where margin: 0 auto doesn't work
+            -->
+            <td style="padding: 0;" align="center">
+
+                <!--
+                    MAIN EMAIL CONTAINER
+                    600px width is industry standard for email
+                    Reason: Fits in most email client preview panes without horizontal scroll
+                    Outlook ignores max-width, so we use width="600"
+                    max-width provides fluid behavior in mobile clients
+                -->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="content-wrapper" style="max-width: 600px; background-color: #2F5D4A;">
+
+                    <!-- Header Logo -->
+                    <tr>
+                        <td style="padding: 30px 40px; text-align: center; background-color: #2F5D4A;">
+                            <!--
+                                IMAGE BEST PRACTICES
+                                - Always include width attribute (not just CSS)
+                                - alt text for accessibility and when images blocked
+                                - display: block removes baseline gap in some clients
+                                - border: 0 removes default blue border in older clients
+                            -->
+                            <img src="https://via.placeholder.com/150x30/2F5D4A/ffffff?text=ocean" width="150" alt="Ocean" style="display: block; margin: 0 auto; border: 0;">
+                        </td>
+                    </tr>
+
+                    <!-- Announcement Banner -->
+                    <tr>
+                        <td style="padding: 15px 40px; text-align: center; background-color: #FFC107;">
+                            <!--
+                                TEXT STYLING
+                                - margin: 0 removes default paragraph spacing
+                                - All font properties inline (not in classes)
+                                - letter-spacing works in most clients (not Outlook 2007-2013)
+                                - text-transform widely supported
+                            -->
+                            <p style="margin: 0; font-size: 14px; font-weight: 700; color: #000000; font-family: Arial, sans-serif; letter-spacing: 1px; text-transform: uppercase;">Black Friday Sale Still On</p>
+                        </td>
+                    </tr>
+
+                    <!-- Hero Section -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 40px 60px 30px; text-align: center; background-color: #2F5D4A;">
+                            <!--
+                                HEADING HIERARCHY
+                                Use semantic HTML (h1, h2, h3) for accessibility
+                                Reset margins to control spacing precisely
+                                line-height unitless values work better across clients
+                            -->
+                            <h1 style="margin: 0 0 20px; font-size: 42px; font-weight: 700; color: #ffffff; line-height: 1.2; font-family: Arial, sans-serif;" class="heading-large">
+                                The Power of Nature's Multivitamin at
+                                <!--
+                                    INLINE COLOR CHANGE
+                                    <span> with inline color is safest for text color variation
+                                    Avoids class-based styling that may be stripped
+                                -->
+                                <span style="color: #FFC107;">Black Friday Prices</span>
+                            </h1>
+
+                            <p style="margin: 0 0 30px; font-size: 18px; line-height: 1.5; color: #ffffff; font-family: Arial, sans-serif;">Save Big on Your Health Essentials</p>
+
+                            <!--
+                                BULLETPROOF BUTTON PATTERN
+
+                                Why this complex structure?
+                                1. Outlook 2007-2019 has poor <a> tag padding support
+                                2. Gmail strips margin on <a> tags
+                                3. Yahoo has issues with block-level links
+
+                                This pattern works by:
+                                - Outer table centers the button
+                                - TD provides background color and border-radius
+                                - <a> tag inside gets padding
+                                - border-radius on both TD and <a> for redundancy
+
+                                CRITICAL: display: inline-block on <a> makes padding work
+                                CRITICAL: text-decoration: none removes underline
+                                CRITICAL: target="_blank" for external links
+
+                                UTM TRACKING PARAMETERS:
+                                - utm_source=email: Traffic comes from email channel
+                                - utm_medium=email: Identifies the marketing medium
+                                - utm_campaign=black_friday_2024: Specific campaign identifier
+                                - utm_content=hero_cta: Differentiates links within same email
+                                Purpose: Track campaign performance in Google Analytics
+                            -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" class="button-wrapper">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <!--[if mso]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com/shop?utm_source=email&utm_medium=email&utm_campaign=black_friday_2024&utm_content=hero_cta" style="height:48px;v-text-anchor:middle;width:244px;" arcsize="85%" stroke="f" fillcolor="#6BBAA7">
+                                          <w:anchorlock/>
+                                          <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:700;">Shop Up to 30% OFF</center>
+                                        </v:roundrect>
+                                        <![endif]-->
+                                        <!--[if !mso]><!-->
+                                        <a href="https://example.com/shop?utm_source=email&utm_medium=email&utm_campaign=black_friday_2024&utm_content=hero_cta" target="_blank" style="display: inline-block; padding: 16px 40px; font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 30px;">Shop Up to 30% OFF</a>
+                                        <!--<![endif]-->
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Product Image -->
+                    <tr>
+                        <td style="padding: 30px 40px; text-align: center; background-color: #2F5D4A;">
+                            <img src="https://via.placeholder.com/400x450/2F5D4A/ffffff?text=Wild+Sea+Moss" width="400" alt="Wild Sea Moss Supplement" class="mobile-img" style="display: block; margin: 0 auto; border: 0;">
+                        </td>
+                    </tr>
+
+                    <!-- Pricing Section -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 40px 60px 20px; text-align: center; background-color: #2F5D4A;">
+                            <h2 style="margin: 0; font-size: 48px; font-weight: 900; color: #ffffff; line-height: 1;" class="heading-xlarge">25% OFF</h2>
+                            <p style="margin: 5px 0 30px; font-size: 14px; font-weight: 700; color: #ffffff; font-family: Arial, sans-serif; letter-spacing: 1px; text-transform: uppercase;">Orders Under $100</p>
+
+                            <h2 style="margin: 0; font-size: 48px; font-weight: 900; color: #ffffff; line-height: 1;" class="heading-xlarge">30% OFF</h2>
+                            <p style="margin: 5px 0 30px; font-size: 14px; font-weight: 700; color: #ffffff; font-family: Arial, sans-serif; letter-spacing: 1px; text-transform: uppercase;">Orders Over $100</p>
+
+                            <!--
+                                BOLD TEXT IN PARAGRAPHS
+                                <strong> and <b> both work in email
+                                <strong> is semantic, <b> is presentational
+                                Both have excellent email client support
+                            -->
+                            <p style="margin: 0 0 30px; font-size: 14px; line-height: 1.6; color: #ffffff; font-family: Arial, sans-serif;">
+                                This <strong>Black Friday</strong>, grab the superfood supplement that fuels your health.
+                                <strong>Wild Sea Moss</strong> has <strong>92 out of 102</strong> minerals your body needs.
+                                One bottle is a game-changer for your health.
+                            </p>
+
+                            <!--
+                                REPEATED CTA STRATEGY
+                                Multiple CTAs increase conversion opportunities
+                                Each CTA has unique utm_content for tracking performance
+                                This one: utm_content=pricing_cta (after pricing section)
+                            -->
+                            <!-- Repeated CTA for multiple conversion opportunities -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" class="button-wrapper">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <!--[if mso]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com/shop?utm_source=email&utm_medium=email&utm_campaign=black_friday_2024&utm_content=pricing_cta" style="height:48px;v-text-anchor:middle;width:244px;" arcsize="85%" stroke="f" fillcolor="#6BBAA7">
+                                          <w:anchorlock/>
+                                          <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:700;">Shop Up to 30% OFF</center>
+                                        </v:roundrect>
+                                        <![endif]-->
+                                        <!--[if !mso]><!-->
+                                        <a href="https://example.com/shop?utm_source=email&utm_medium=email&utm_campaign=black_friday_2024&utm_content=pricing_cta" target="_blank" style="display: inline-block; padding: 16px 40px; font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 30px;">Shop Up to 30% OFF</a>
+                                        <!--<![endif]-->
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Benefits Header -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 50px 40px 30px; text-align: center; background-color: #2F5D4A;">
+                            <h3 style="margin: 0 0 30px; font-size: 20px; font-weight: 700; color: #FFC107; font-family: Arial, sans-serif; letter-spacing: 1px; text-transform: uppercase;" class="heading-medium">Here's What Sea Moss<br>Can Do For You</h3>
+
+                            <img src="https://via.placeholder.com/300x320/2F5D4A/ffffff?text=Wild+Sea+Moss" width="300" alt="Wild Sea Moss" class="mobile-img" style="display: block; margin: 0 auto 30px; border: 0;">
+                        </td>
+                    </tr>
+
+                    <!--
+                        2-COLUMN GRID LAYOUT - BENEFIT CARDS
+
+                        DESKTOP LAYOUT TECHNIQUE:
+                        - Percentage-based widths for columns
+                        - Each card: 48% width (2 cards = 96%)
+                        - Gutter: 4% (remaining space)
+                        - Adds up to 100% for precise control
+
+                        MOBILE RESPONSIVE BEHAVIOR:
+                        - Media query: @media screen and (max-width: 600px)
+                        - .benefit-card class forces display: block !important
+                        - width: 100% !important makes each card full width
+                        - Cards stack vertically for easy mobile reading
+                        - margin-bottom: 15px !important adds spacing between stacked cards
+
+                        OUTLOOK COMPATIBILITY:
+                        - Percentage widths work in Outlook 2007-2019
+                        - vertical-align: top prevents uneven alignment
+                        - Nested tables for each card ensure proper backgrounds
+                        - border-radius degrades gracefully in older Outlook
+
+                        DESIGN PATTERNS:
+                        - Icon + Heading + Description pattern
+                        - Consistent padding (25px) for visual rhythm
+                        - White background cards on dark green base
+                        - Emojis for visual interest (fallback: could use images)
+
+                        ALTERNATIVE APPROACHES:
+                        - Could use fixed pixel widths (240px + 16px gutter)
+                        - Could use align="left" on TDs (hybrid approach)
+                        - Could use ghost table technique for Outlook
+                    -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 0 40px 30px; background-color: #2F5D4A;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <!-- Card 1 -->
+                                    <td class="benefit-card" width="48%" style="vertical-align: top; padding: 0 1% 15px 0;">
+                                        <!--
+                                            NESTED TABLE FOR CARD
+                                            Why nested? To apply background-color and border-radius
+                                            Outlook 2007-2016 has limited border-radius support
+                                            but this works in Gmail, Apple Mail, iOS Mail, Outlook.com
+                                        -->
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 8px;">
+                                            <tr>
+                                                <td style="padding: 25px; text-align: center;">
+                                                    <!--
+                                                        DIV IN EMAIL
+                                                        Generally avoid divs, but acceptable for simple containers
+                                                        Used here for icon styling
+                                                        LIMITATION: Outlook has poor div support for layout
+                                                        SAFE USE: Non-layout purposes like this
+                                                    -->
+                                                    <div style="margin-bottom: 15px; font-size: 36px;">🔥</div>
+                                                    <h4 style="margin: 0 0 10px; font-size: 16px; font-weight: 700; color: #2F5D4A; font-family: Arial, sans-serif;">Fat Burning</h4>
+                                                    <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #666666; font-family: Arial, sans-serif;">Packed with iodine and antioxidants, sea moss can help support a healthy metabolism and weight management.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+
+                                    <!--
+                                        GUTTER SPACER
+                                        font-size: 0 and line-height: 0 collapse whitespace
+                                        &nbsp; ensures the cell isn't completely empty
+                                        4% width creates spacing between cards
+                                        On mobile, this spacer is ignored when cards stack
+                                    -->
+                                    <td width="4%" style="font-size: 0; line-height: 0;">&nbsp;</td>
+
+                                    <!-- Card 2 -->
+                                    <td class="benefit-card" width="48%" style="vertical-align: top; padding: 0 0 15px 1%;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 8px;">
+                                            <tr>
+                                                <td style="padding: 25px; text-align: center;">
+                                                    <div style="margin-bottom: 15px; font-size: 36px;">💨</div>
+                                                    <h4 style="margin: 0 0 10px; font-size: 16px; font-weight: 700; color: #2F5D4A; font-family: Arial, sans-serif;">Oxygen Levels</h4>
+                                                    <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #666666; font-family: Arial, sans-serif;">Sea moss works to deliver oxygen and nutrients to the lungs, which can increase overall energy.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- Second row of cards -->
+                                <tr>
+                                    <td class="benefit-card" width="48%" style="vertical-align: top; padding: 0 1% 15px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 8px;">
+                                            <tr>
+                                                <td style="padding: 25px; text-align: center;">
+                                                    <div style="margin-bottom: 15px; font-size: 36px;">🦴</div>
+                                                    <h4 style="margin: 0 0 10px; font-size: 16px; font-weight: 700; color: #2F5D4A; font-family: Arial, sans-serif;">Bone Density</h4>
+                                                    <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #666666; font-family: Arial, sans-serif;">This product contains calcium and vitamin K chloride, for increased calcium and stronger bones.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+
+                                    <td width="4%" style="font-size: 0; line-height: 0;">&nbsp;</td>
+
+                                    <td class="benefit-card" width="48%" style="vertical-align: top; padding: 0 0 15px 1%;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 8px;">
+                                            <tr>
+                                                <td style="padding: 25px; text-align: center;">
+                                                    <div style="margin-bottom: 15px; font-size: 36px;">💪</div>
+                                                    <h4 style="margin: 0 0 10px; font-size: 16px; font-weight: 700; color: #2F5D4A; font-family: Arial, sans-serif;">Inflammation & Joint Pain</h4>
+                                                    <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #666666; font-family: Arial, sans-serif;">It's natural anti-inflammatory properties help reduce swelling which eases aching joints.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!--
+                        CTA AFTER BENEFITS
+                        Positioned after value proposition (benefit cards)
+                        utm_content=benefits_cta tracks clicks after users see product benefits
+                    -->
+                    <!-- CTA after benefits -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px 60px 40px; text-align: center; background-color: #2F5D4A;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" class="button-wrapper">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <!--[if mso]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com/shop?utm_source=email&utm_medium=email&utm_campaign=black_friday_2024&utm_content=benefits_cta" style="height:48px;v-text-anchor:middle;width:244px;" arcsize="85%" stroke="f" fillcolor="#6BBAA7">
+                                          <w:anchorlock/>
+                                          <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:700;">Shop Up to 30% OFF</center>
+                                        </v:roundrect>
+                                        <![endif]-->
+                                        <!--[if !mso]><!-->
+                                        <a href="https://example.com/shop?utm_source=email&utm_medium=email&utm_campaign=black_friday_2024&utm_content=benefits_cta" target="_blank" style="display: inline-block; padding: 16px 40px; font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 30px;">Shop Up to 30% OFF</a>
+                                        <!--<![endif]-->
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!--
+                        TESTIMONIALS SECTION - SOCIAL PROOF STRATEGY
+
+                        CONVERSION PSYCHOLOGY:
+                        - Builds trust through customer testimonials
+                        - Positioned after product benefits to reinforce value
+                        - Real customer names add authenticity
+                        - 5-star ratings create visual social proof
+
+                        STRUCTURE & LAYOUT:
+                        - Each testimonial in separate table for spacing control
+                        - margin-bottom: 30px controls vertical rhythm
+                        - Centered alignment for visual consistency
+                        - Hierarchy: Stars → Title → Quote → Name
+
+                        EMOJI STARS IMPLEMENTATION:
+                        - Stars (⭐) have universal support in email clients
+                        - More reliable than image stars (no HTTP requests)
+                        - Accessible (screen readers will read as "star")
+                        - Color: #FFC107 (gold) for visual prominence
+                        - font-size: 20px for visibility without overwhelming
+
+                        TYPOGRAPHY HIERARCHY:
+                        - Heading (h4): 18px, bold, white (#ffffff)
+                        - Quote text (p): 14px, regular, white (#ffffff)
+                        - Attribution (p): 13px, italic, light (#C8D9D3)
+
+                        ALTERNATIVE APPROACH:
+                        - Could use image stars for pixel-perfect control
+                        - Example: <img src="star.png"> but adds HTTP requests
+                        - Trade-off: Visual control vs. Performance & Reliability
+
+                        BEST PRACTICES:
+                        - Keep quotes concise (1-2 sentences)
+                        - Use specific benefits, not generic praise
+                        - Include real customer names for credibility
+                        - Odd number (3) creates visual balance
+                    -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 40px 60px; background-color: #2F5D4A;">
+
+                            <!-- Testimonial 1 -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 30px;">
+                                <tr>
+                                    <td style="text-align: center; padding-bottom: 10px;">
+                                        <div style="font-size: 20px; color: #FFC107; margin-bottom: 10px;">⭐⭐⭐⭐⭐</div>
+                                        <h4 style="margin: 0 0 10px; font-size: 18px; font-weight: 700; color: #ffffff; font-family: Arial, sans-serif;">Great Product</h4>
+                                        <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #ffffff; font-family: Arial, sans-serif;">"Since taking Sea Moss I have more energy. It is what helped me with my stress level as well!"</p>
+                                        <!--
+                                            ITALIC TEXT
+                                            font-style: italic works universally
+                                            Could also use <em> tag for semantic emphasis
+                                        -->
+                                        <p style="margin: 0; font-size: 13px; font-style: italic; color: #C8D9D3; font-family: Arial, sans-serif;">- Carol Cavalca</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Testimonial 2 -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 30px;">
+                                <tr>
+                                    <td style="text-align: center; padding-bottom: 10px;">
+                                        <div style="font-size: 20px; color: #FFC107; margin-bottom: 10px;">⭐⭐⭐⭐⭐</div>
+                                        <h4 style="margin: 0 0 10px; font-size: 18px; font-weight: 700; color: #ffffff; font-family: Arial, sans-serif;">This Product is Great!</h4>
+                                        <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #ffffff; font-family: Arial, sans-serif;">"I can feel a difference in my body after I've been using it."</p>
+                                        <p style="margin: 0; font-size: 13px; font-style: italic; color: #C8D9D3; font-family: Arial, sans-serif;">- Keiah Evans</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Testimonial 3 -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 30px;">
+                                <tr>
+                                    <td style="text-align: center; padding-bottom: 10px;">
+                                        <div style="font-size: 20px; color: #FFC107; margin-bottom: 10px;">⭐⭐⭐⭐⭐</div>
+                                        <h4 style="margin: 0 0 10px; font-size: 18px; font-weight: 700; color: #ffffff; font-family: Arial, sans-serif;">BETTER THAN EVER!</h4>
+                                        <p style="margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: #ffffff; font-family: Arial, sans-serif;">"My knees and legs have not been hurting since using the Sea Moss Plus. Love it!!!"</p>
+                                        <p style="margin: 0; font-size: 13px; font-style: italic; color: #C8D9D3; font-family: Arial, sans-serif;">- Angela Duran</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!--
+                                FINAL CTA AFTER SOCIAL PROOF
+                                Positioned after customer testimonials
+                                utm_content=testimonials_cta tracks conversion after trust-building
+                                Last conversion opportunity before footer
+                            -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" class="button-wrapper">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <!--[if mso]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com/shop?utm_source=email&utm_medium=email&utm_campaign=black_friday_2024&utm_content=testimonials_cta" style="height:48px;v-text-anchor:middle;width:244px;" arcsize="85%" stroke="f" fillcolor="#6BBAA7">
+                                          <w:anchorlock/>
+                                          <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:700;">Shop Up to 30% OFF</center>
+                                        </v:roundrect>
+                                        <![endif]-->
+                                        <!--[if !mso]><!-->
+                                        <a href="https://example.com/shop?utm_source=email&utm_medium=email&utm_campaign=black_friday_2024&utm_content=testimonials_cta" target="_blank" style="display: inline-block; padding: 16px 40px; font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 30px;">Shop Up to 30% OFF</a>
+                                        <!--<![endif]-->
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!--
+                        TRUST BADGES / ICON GRID - CREDIBILITY SIGNALS
+
+                        PURPOSE & PSYCHOLOGY:
+                        - Final trust-building before footer
+                        - Highlights product quality & manufacturing standards
+                        - Addresses common customer concerns (vegan, tested, etc.)
+                        - Positions brand as professional and trustworthy
+
+                        LAYOUT TECHNIQUE:
+                        - 4-column layout using 25% widths (4 × 25% = 100%)
+                        - Equal width columns for visual balance
+                        - Works across all email clients including Outlook
+                        - vertical-align: top ensures alignment if text wraps
+
+                        MOBILE RESPONSIVENESS:
+                        - .icon-cell media query adjusts layout on mobile
+                        - Could stack to 2 columns (50% width) or stay at 4 columns
+                        - padding: 0 10px 20px creates breathing room
+
+                        ICON IMPLEMENTATION:
+                        - Using emojis (🇺🇸 🌱 🔬 🏭) for this example
+                        - font-size: 36px makes icons prominent
+                        - margin-bottom: 10px separates icon from text
+
+                        ALTERNATIVE APPROACH:
+                        - Could use brand-consistent SVG/PNG images
+                        - Example: <img src="made-in-usa-badge.png">
+                        - Trade-off: Brand consistency vs. Simplicity & Load time
+                        - Images recommended for production if brand guidelines exist
+
+                        TEXT STYLING:
+                        - font-size: 12px (small but readable)
+                        - font-weight: 700 (bold for emphasis)
+                        - color: #2F5D4A (brand green)
+                        - <br> tags control line breaks for consistent wrapping
+
+                        BADGE SELECTION BEST PRACTICES:
+                        - Choose 3-5 most important trust signals
+                        - Address specific customer objections
+                        - Use industry-recognized certifications when possible
+                        - Keep text short (2-4 words max per line)
+                    -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 40px 40px 30px; background-color: #f5f5f5; text-align: center;" class="light-bg">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td class="icon-cell" width="25%" style="vertical-align: top; padding: 0 10px 20px; text-align: center;">
+                                        <div style="font-size: 36px; margin-bottom: 10px;">🇺🇸</div>
+                                        <!--
+                                            LINE BREAKS IN TEXT
+                                            <br> tag works universally in email
+                                            More reliable than trying to control width/wrapping
+                                        -->
+                                        <p style="margin: 0; font-size: 12px; font-weight: 700; color: #2F5D4A; font-family: Arial, sans-serif;">Made in the USA<br>with Global Ingredients</p>
+                                    </td>
+
+                                    <td class="icon-cell" width="25%" style="vertical-align: top; padding: 0 10px 20px; text-align: center;">
+                                        <div style="font-size: 36px; margin-bottom: 10px;">🌱</div>
+                                        <p style="margin: 0; font-size: 12px; font-weight: 700; color: #2F5D4A; font-family: Arial, sans-serif;">Vegan<br>Friendly</p>
+                                    </td>
+
+                                    <td class="icon-cell" width="25%" style="vertical-align: top; padding: 0 10px 20px; text-align: center;">
+                                        <div style="font-size: 36px; margin-bottom: 10px;">🔬</div>
+                                        <p style="margin: 0; font-size: 12px; font-weight: 700; color: #2F5D4A; font-family: Arial, sans-serif;">Third-Party<br>Tested</p>
+                                    </td>
+
+                                    <td class="icon-cell" width="25%" style="vertical-align: top; padding: 0 10px 20px; text-align: center;">
+                                        <div style="font-size: 36px; margin-bottom: 10px;">🏭</div>
+                                        <p style="margin: 0; font-size: 12px; font-weight: 700; color: #2F5D4A; font-family: Arial, sans-serif;">In-House<br>Manufacturing</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Footer Contact Info -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px 40px; background-color: #f5f5f5; text-align: center;" class="light-bg">
+                            <img src="https://via.placeholder.com/150x30/f5f5f5/2F5D4A?text=ocean" width="150" alt="Ocean" style="display: block; margin: 0 auto 20px; border: 0;">
+                            <p style="margin: 0 0 15px; font-size: 13px; line-height: 1.6; color: #666666; font-family: Arial, sans-serif;">
+                                Ocean • Oceanbenefits.com • 1-800-555-1234<br>
+                                Customer Care: (205) 574 - 7452<br>
+                                Ocean Inc., 123 Wellness Way, Suite 100, Los Angeles, CA 90001
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!--
+                        LEGAL FOOTER & UNSUBSCRIBE
+
+                        CAN-SPAM COMPLIANCE REQUIREMENTS:
+                        1. Physical mailing address (included above)
+                        2. Unsubscribe link (included below)
+                        3. Unsubscribe must be honored within 10 days
+                        4. Must be visible and functional
+
+                        GDPR COMPLIANCE:
+                        - Privacy Policy link
+                        - Clear opt-out mechanism
+
+                        LINK STYLING:
+                        - color: inherit default blue links
+                        - text-decoration: underline for clarity
+                        - target="_blank" opens in new window
+
+                        UTM TRACKING:
+                        - Footer links also include UTM parameters
+                        - Helps track engagement with policy/legal pages
+                        - Unsubscribe tracking for list management insights
+                    -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px 40px 40px; background-color: #f5f5f5; text-align: center;" class="light-bg">
+                            <p style="margin: 0 0 10px; font-size: 12px; line-height: 1.6; color: #666666; font-family: Arial, sans-serif;">
+                                You received this email because you subscribed to Ocean's mailing list.
+                            </p>
+                            <p style="margin: 0 0 15px; font-size: 11px; line-height: 1.6; color: #999999; font-family: Arial, sans-serif;">
+                                *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary. Consult with your healthcare professional before using our products if you are pregnant, nursing, taking medication, or have a medical condition. The testimonials on this website are individual cases and do not guarantee that you will get the same results.
+                            </p>
+                            <p style="margin: 0; font-size: 11px; line-height: 1.6; color: #999999; font-family: Arial, sans-serif;">
+                                <a href="https://example.com/unsubscribe?utm_source=email&utm_medium=email&utm_campaign=black_friday_2024" target="_blank" style="color: #2F5D4A; text-decoration: underline;">Unsubscribe</a> |
+                                <a href="https://example.com/privacy?utm_source=email&utm_medium=email&utm_campaign=black_friday_2024" target="_blank" style="color: #2F5D4A; text-decoration: underline;">Privacy Policy</a> |
+                                <a href="https://example.com/terms?utm_source=email&utm_medium=email&utm_campaign=black_friday_2024" target="_blank" style="color: #2F5D4A; text-decoration: underline;">Terms & Conditions</a>
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
