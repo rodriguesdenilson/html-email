@@ -2,7 +2,7 @@
 
 A portfolio of **21 responsive, production-ready HTML email templates** built for cross-client compatibility. Each template represents a distinct brand and use case — from product launches to seasonal sales — demonstrating a range of email development techniques and layout patterns.
 
-> **Status:** ✅ Production-Ready | Last Updated: January 2025 | Actively Maintained
+> **Status:** ✅ Production-Ready | Last Updated: February 2026 | Actively Maintained
 
 > **Note:** The templates do not include real images — the focus is entirely on HTML/CSS structure, layout, responsiveness, and cross-client compatibility. Image placeholders can be swapped for production assets before deployment.
 
