@@ -451,7 +451,6 @@ These templates are provided as educational and professional portfolio examples.
 Senior Email Front-End Developer  
 📧 denilsonar@gmail.com  
 🔗 [LinkedIn](https://linkedin.com/in/denilson-rodrigues01/)  
-💼 [Portfolio](https://github.com/rodriguesdenilson)
 
 ---
 
@@ -460,7 +459,6 @@ Senior Email Front-End Developer
 Interested in discussing email development, responsive design, or marketing communications?
 
 - 📧 Email: denilsonar@gmail.com
-- 📱 Phone: (469) 427-3717
 - 🔗 LinkedIn: linkedin.com/in/denilson-rodrigues01/
 
 ---
