@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,10 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
             min-height: 100vh;
             padding: 40px 20px;
+            color: #2c3e50;
         }
         
         .container {
@@ -25,18 +27,21 @@
         
         .header {
             text-align: center;
-            color: white;
             margin-bottom: 60px;
         }
         
         .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
+            color: #1a252f;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
         
         .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
+            font-size: 1.1em;
+            color: #5a6c7d;
+            font-weight: 400;
         }
         
         .templates-grid {
@@ -48,16 +53,16 @@
         
         .template-card {
             background: white;
-            border-radius: 10px;
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
+            border: 1px solid #e0e6ed;
         }
         
         .template-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
         }
         
         .template-card a {
@@ -67,11 +72,12 @@
         }
         
         .template-number {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
             color: white;
             padding: 15px;
-            font-size: 0.9em;
+            font-size: 0.85em;
             font-weight: 600;
+            letter-spacing: 0.5px;
         }
         
         .template-info {
@@ -81,49 +87,64 @@
         .template-title {
             font-size: 1.2em;
             font-weight: 600;
-            color: #333;
+            color: #1a252f;
             margin-bottom: 8px;
         }
         
         .template-brand {
-            color: #666;
+            color: #7f8c8d;
             font-size: 0.95em;
             margin-bottom: 12px;
+            font-weight: 500;
         }
         
         .template-highlights {
-            color: #888;
+            color: #95a5a6;
             font-size: 0.85em;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         
         .btn-view {
             display: inline-block;
             margin-top: 12px;
             padding: 8px 16px;
-            background: #667eea;
+            background: #34495e;
             color: white;
-            border-radius: 5px;
+            border-radius: 4px;
             font-size: 0.9em;
             font-weight: 600;
             transition: background 0.3s ease;
         }
         
         .template-card:hover .btn-view {
-            background: #764ba2;
+            background: #2c3e50;
         }
         
         .footer {
             text-align: center;
-            color: white;
+            color: #5a6c7d;
             margin-top: 60px;
             padding-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: 1px solid #e0e6ed;
+        }
+        
+        .footer p {
+            line-height: 1.8;
+            font-size: 0.95em;
+        }
+        
+        .footer p:first-child {
+            color: #34495e;
+            font-weight: 500;
         }
         
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 1.8em;
+            }
+            
+            .header p {
+                font-size: 1em;
             }
             
             .templates-grid {
@@ -136,288 +157,287 @@
     <div class="container">
         <div class="header">
             <h1>📧 Email Templates Portfolio</h1>
-            <p>21 templates responsivos e prontos para produção</p>
+            <p>21 responsive, production-ready HTML email templates</p>
         </div>
         
         <div class="templates-grid">
             <!-- Template 1 -->
             <div class="template-card">
-                <a href="project-1-responsive.html">
-                    <div class="template-number">Projeto 01</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-1-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 01</div>
                     <div class="template-info">
                         <div class="template-title">HTML Email Newsletter</div>
                         <div class="template-brand">Newsletter</div>
-                        <div class="template-highlights">Grid 3 colunas, ícones sociais, dark mode</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">3-column feature grid, social icons, dark mode</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 2 -->
             <div class="template-card">
-                <a href="project-2-responsive.html">
-                    <div class="template-number">Projeto 02</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-2-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 02</div>
                     <div class="template-info">
                         <div class="template-title">Bomb Nutrition</div>
                         <div class="template-brand">Halloween Promo</div>
-                        <div class="template-highlights">Multi-CTA, tema temático, laranja/dark</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Multi-CTA promotional, orange/dark theme</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 3 -->
             <div class="template-card">
-                <a href="project-3-responsive.html">
-                    <div class="template-number">Projeto 03</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-3-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 03</div>
                     <div class="template-info">
                         <div class="template-title">Hims</div>
                         <div class="template-brand">Healthcare</div>
-                        <div class="template-highlights">Cards de produtos, seções de categoria</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Product cards, category sections</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 4 -->
             <div class="template-card">
-                <a href="project-4-responsive.html">
-                    <div class="template-number">Projeto 04</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-4-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 04</div>
                     <div class="template-info">
                         <div class="template-title">Starbucks Rewards</div>
-                        <div class="template-brand">Programa de Pontos</div>
-                        <div class="template-highlights">Tabela de recompensas, paleta verde</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-brand">Rewards Program</div>
+                        <div class="template-highlights">Rewards table, green brand palette</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 5 -->
             <div class="template-card">
-                <a href="project-5-responsive.html">
-                    <div class="template-number">Projeto 05</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-5-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 05</div>
                     <div class="template-info">
                         <div class="template-title">Malibu Rum</div>
                         <div class="template-brand">Tropical Boo Bash</div>
-                        <div class="template-highlights">Receitas de coquetel, gradientes tropicais</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Cocktail recipes, gradient backgrounds</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 6 -->
             <div class="template-card">
-                <a href="project-6-responsive.html">
-                    <div class="template-number">Projeto 06</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-6-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 06</div>
                     <div class="template-info">
                         <div class="template-title">Oobli</div>
                         <div class="template-brand">Halloween Sale</div>
-                        <div class="template-highlights">Promoção de desconto, lima/laranja</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Discount promo, lime/orange palette</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
-            <!-- Adicione os outros 15 templates seguindo o mesmo padrão -->
             <!-- Template 7 -->
             <div class="template-card">
-                <a href="project-7-responsive.html">
-                    <div class="template-number">Projeto 07</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-7-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 07</div>
                     <div class="template-info">
                         <div class="template-title">Fleet Feet</div>
                         <div class="template-brand">Milestones</div>
-                        <div class="template-highlights">Oferta de aniversário, navy/gold</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Birthday gift offer, navy/gold theme</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 8 -->
             <div class="template-card">
-                <a href="project-8-responsive.html">
-                    <div class="template-number">Projeto 08</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-8-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 08</div>
                     <div class="template-info">
                         <div class="template-title">Confused.com</div>
                         <div class="template-brand">App Download</div>
-                        <div class="template-highlights">6 seções, tema dark</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">6-section feature showcase, dark theme</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 9 -->
             <div class="template-card">
-                <a href="project-9-responsive.html">
-                    <div class="template-number">Projeto 09</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-9-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 09</div>
                     <div class="template-info">
                         <div class="template-title">MINI</div>
                         <div class="template-brand">Motortober Rally</div>
-                        <div class="template-highlights">Evento automotivo, ofertas de financiamento</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Automotive event, financing offers</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 10 -->
             <div class="template-card">
-                <a href="project-10-responsive.html">
-                    <div class="template-number">Projeto 10</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-10-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 10</div>
                     <div class="template-info">
                         <div class="template-title">Rest Bedding</div>
                         <div class="template-brand">Summer Sale</div>
-                        <div class="template-highlights">Showcase de produtos, tabela comparativa</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Product showcase, comparison table</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 11 -->
             <div class="template-card">
-                <a href="project-11-responsive.html">
-                    <div class="template-number">Projeto 11</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-11-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 11</div>
                     <div class="template-info">
                         <div class="template-title">Plaid</div>
-                        <div class="template-brand">Lending Tools</div>
-                        <div class="template-highlights">Hero + logos, side-by-side, teal/navy</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-brand">Lending Tools Launch</div>
+                        <div class="template-highlights">Hero + partner logos, side-by-side content</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 12 -->
             <div class="template-card">
-                <a href="project-12-responsive.html">
-                    <div class="template-number">Projeto 12</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-12-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 12</div>
                     <div class="template-info">
                         <div class="template-title">Calendly</div>
                         <div class="template-brand">Workflows Feature</div>
-                        <div class="template-highlights">Checklist, badge, azul</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Feature checklist, milestone badge, blue</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 13 -->
             <div class="template-card">
-                <a href="project-13-responsive.html">
-                    <div class="template-number">Projeto 13</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-13-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 13</div>
                     <div class="template-info">
                         <div class="template-title">Plaid AI</div>
                         <div class="template-brand">AI Tools Launch</div>
-                        <div class="template-highlights">Chat mockup, diagrama IA, navy/cyan</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Chat mockup, AI diagram, testimonial</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 14 -->
             <div class="template-card">
-                <a href="project-14-responsive.html">
-                    <div class="template-number">Projeto 14</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-14-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 14</div>
                     <div class="template-info">
                         <div class="template-title">DIME Beauty</div>
                         <div class="template-brand">Anniversary Sale</div>
-                        <div class="template-highlights">Grid 10 produtos, badges numerados, gold</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Top-10 product grid, numbered badges</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 15 -->
             <div class="template-card">
-                <a href="project-15-responsive.html">
-                    <div class="template-number">Projeto 15</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-15-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 15</div>
                     <div class="template-info">
                         <div class="template-title">Gainful</div>
                         <div class="template-brand">7th Birthday Giveaway</div>
-                        <div class="template-highlights">Hero produto, layout minimal, bege</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Hero product shot, minimal layout</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 16 -->
             <div class="template-card">
-                <a href="project-16-responsive.html">
-                    <div class="template-number">Projeto 16</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-16-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 16</div>
                     <div class="template-info">
                         <div class="template-title">TALEA Beer Co.</div>
                         <div class="template-brand">1st Anniversary</div>
-                        <div class="template-highlights">Alternado imagem/texto, coral/areia</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Alternating image/text, taproom section</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 17 -->
             <div class="template-card">
-                <a href="project-17-responsive.html">
-                    <div class="template-number">Projeto 17</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-17-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 17</div>
                     <div class="template-info">
                         <div class="template-title">A Book Apart</div>
                         <div class="template-brand">Spring Sale</div>
-                        <div class="template-highlights">Badge desconto, lista livros, vermelho</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Discount badge, book list, red accent</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 18 -->
             <div class="template-card">
-                <a href="project-18-responsive.html">
-                    <div class="template-number">Projeto 18</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-18-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 18</div>
                     <div class="template-info">
                         <div class="template-title">Methodical</div>
                         <div class="template-brand">Japanese Green Tea</div>
-                        <div class="template-highlights">Product launch, grid categorias, sage/tan</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Product launch hero, shop-by-category</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 19 -->
             <div class="template-card">
-                <a href="project-19-responsive.html">
-                    <div class="template-number">Projeto 19</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-19-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 19</div>
                     <div class="template-info">
                         <div class="template-title">SHIFT Robotics</div>
                         <div class="template-brand">Black Friday</div>
-                        <div class="template-highlights">Hero produto, ícones sociais, preto/amarelo</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Product hero, social icons, black/yellow</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 20 -->
             <div class="template-card">
-                <a href="project-20-responsive.html">
-                    <div class="template-number">Projeto 20</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-20-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 20</div>
                     <div class="template-info">
                         <div class="template-title">Ocean Supplements</div>
                         <div class="template-brand">Black Friday</div>
-                        <div class="template-highlights">Tiers de preço, cards, testemunhos</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Pricing tiers, benefit cards, testimonials</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
             
             <!-- Template 21 -->
             <div class="template-card">
-                <a href="project-21-responsive.html">
-                    <div class="template-number">Projeto 21</div>
+                <a href="https://rodriguesdenilson.github.io/html-email/project-21-responsive.html" target="_blank" rel="noopener noreferrer">
+                    <div class="template-number">Project 21</div>
                     <div class="template-info">
                         <div class="template-title">1906 Wellness</div>
                         <div class="template-brand">Black Friday Sale</div>
-                        <div class="template-highlights">Hero tipográfico SALE, roxo/amarelo</div>
-                        <div class="btn-view">Visualizar →</div>
+                        <div class="template-highlights">Typographic "SALE" hero, product section</div>
+                        <div class="btn-view">View Template →</div>
                     </div>
                 </a>
             </div>
         </div>
         
         <div class="footer">
-            <p>✨ Todos os 21 templates são responsivos, compatíveis com clientes de email e prontos para produção</p>
-            <p style="margin-top: 20px; opacity: 0.7;">Made with ❤️ by Denilson Rodrigues</p>
+            <p>All 21 templates are responsive, cross-client compatible, and production-ready</p>
+            <p style="margin-top: 20px;">Made with ❤️ by Denilson Rodrigues</p>
         </div>
     </div>
 </body>
