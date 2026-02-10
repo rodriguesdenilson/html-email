@@ -28,7 +28,7 @@ This portfolio showcases expertise across critical areas of email development:
 
 | # | File | Brand / Theme | Layout Highlights |
 |---|------|---------------|-------------------|
-| 1 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-1-responsive.html" target="_blank">📧 View</a> | HTML Email Newsletter | 3-column feature grid, social icons, dark mode |
+| 1 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-1-responsive.html" target="_self">📧 View</a> | HTML Email Newsletter | 3-column feature grid, social icons, dark mode |
 | 2 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-2-responsive.html" target="_blank">📧 View</a> | Bomb Nutrition — Halloween Promo | Multi-CTA promotional, orange/dark theme |
 | 3 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-3-responsive.html" target="_blank">📧 View</a> | Hims — Healthcare | Product cards, category sections |
 | 4 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-4-responsive.html" target="_blank">📧 View</a> | Starbucks Rewards | Rewards table, green brand palette |
