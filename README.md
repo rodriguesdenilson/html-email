@@ -28,27 +28,27 @@ This portfolio showcases expertise across critical areas of email development:
 
 | # | File | Brand / Theme | Layout Highlights |
 |---|------|---------------|-------------------|
-| 1 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-1-responsive.html) | HTML Email Newsletter | 3-column feature grid, social icons, dark mode |
-| 2 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-2-responsive.html) | Bomb Nutrition — Halloween Promo | Multi-CTA promotional, orange/dark theme |
-| 3 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-3-responsive.html) | Hims — Healthcare | Product cards, category sections |
-| 4 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-4-responsive.html) | Starbucks Rewards | Rewards table, green brand palette |
-| 5 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-5-responsive.html) | Malibu Rum — Tropical Boo Bash | Cocktail recipes, gradient backgrounds |
-| 6 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-6-responsive.html) | Oobli — Halloween Sale | Discount promo, lime/orange palette |
-| 7 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-7-responsive.html) | Fleet Feet — Milestones | Birthday gift offer, navy/gold theme |
-| 8 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-8-responsive.html) | Confused.com — App Download | 6-section feature showcase, dark theme |
-| 9 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-9-responsive.html) | MINI — Motortober Rally | Automotive event, financing offers |
-| 10 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-10-responsive.html) | Rest Bedding — Summer Sale | Product showcase, comparison table |
-| 11 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-11-responsive.html) | Plaid — Lending Tools Launch | Hero + partner logos, side-by-side content, teal/navy palette |
-| 12 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-12-responsive.html) | Calendly — Workflows Feature | Feature checklist, milestone badge, blue brand palette |
-| 13 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-13-responsive.html) | Plaid — AI Tools Launch | Chat mockup, AI provider diagram, testimonial, dark navy/cyan |
-| 14 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-14-responsive.html) | DIME Beauty — Anniversary Sale | Top-10 product grid, numbered badges, gold/charcoal theme |
-| 15 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-15-responsive.html) | Gainful — 7th Birthday Giveaway | Hero product shot, minimal layout, beige/neutral palette |
-| 16 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-16-responsive.html) | TALEA Beer Co. — 1st Anniversary | Alternating image/text, taproom section, coral/sandy palette |
-| 17 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-17-responsive.html) | A Book Apart — Spring Sale | Discount badge, book list, red/coral accent |
-| 18 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-18-responsive.html) | Methodical — Japanese Green Tea | Product launch hero, shop-by-category grid, sage/tan palette |
-| 19 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-19-responsive.html) | SHIFT Robotics — Black Friday | Product hero, social icon row, black/neon-yellow theme |
-| 20 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-20-responsive.html) | Ocean Supplements — Black Friday | Pricing tiers, benefit cards, testimonials, trust badges |
-| 21 | [📧 View](https://rodriguesdenilson.github.io/html-email/email-templates/project-21-responsive.html) | 1906 Wellness — Black Friday Sale | Typographic "SALE" hero, product section, purple/yellow palette |
+| 1 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-1-responsive.html" target="_blank">📧 View</a> | HTML Email Newsletter | 3-column feature grid, social icons, dark mode |
+| 2 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-2-responsive.html" target="_blank">📧 View</a> | Bomb Nutrition — Halloween Promo | Multi-CTA promotional, orange/dark theme |
+| 3 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-3-responsive.html" target="_blank">📧 View</a> | Hims — Healthcare | Product cards, category sections |
+| 4 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-4-responsive.html" target="_blank">📧 View</a> | Starbucks Rewards | Rewards table, green brand palette |
+| 5 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-5-responsive.html" target="_blank">📧 View</a> | Malibu Rum — Tropical Boo Bash | Cocktail recipes, gradient backgrounds |
+| 6 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-6-responsive.html" target="_blank">📧 View</a> | Oobli — Halloween Sale | Discount promo, lime/orange palette |
+| 7 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-7-responsive.html" target="_blank">📧 View</a> | Fleet Feet — Milestones | Birthday gift offer, navy/gold theme |
+| 8 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-8-responsive.html" target="_blank">📧 View</a> | Confused.com — App Download | 6-section feature showcase, dark theme |
+| 9 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-9-responsive.html" target="_blank">📧 View</a> | MINI — Motortober Rally | Automotive event, financing offers |
+| 10 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-10-responsive.html" target="_blank">📧 View</a> | Rest Bedding — Summer Sale | Product showcase, comparison table |
+| 11 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-11-responsive.html" target="_blank">📧 View</a> | Plaid — Lending Tools Launch | Hero + partner logos, side-by-side content, teal/navy palette |
+| 12 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-12-responsive.html" target="_blank">📧 View</a> | Calendly — Workflows Feature | Feature checklist, milestone badge, blue brand palette |
+| 13 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-13-responsive.html" target="_blank">📧 View</a> | Plaid — AI Tools Launch | Chat mockup, AI provider diagram, testimonial, dark navy/cyan |
+| 14 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-14-responsive.html" target="_blank">📧 View</a> | DIME Beauty — Anniversary Sale | Top-10 product grid, numbered badges, gold/charcoal theme |
+| 15 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-15-responsive.html" target="_blank">📧 View</a> | Gainful — 7th Birthday Giveaway | Hero product shot, minimal layout, beige/neutral palette |
+| 16 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-16-responsive.html" target="_blank">📧 View</a> | TALEA Beer Co. — 1st Anniversary | Alternating image/text, taproom section, coral/sandy palette |
+| 17 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-17-responsive.html" target="_blank">📧 View</a> | A Book Apart — Spring Sale | Discount badge, book list, red/coral accent |
+| 18 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-18-responsive.html" target="_blank">📧 View</a> | Methodical — Japanese Green Tea | Product launch hero, shop-by-category grid, sage/tan palette |
+| 19 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-19-responsive.html" target="_blank">📧 View</a> | SHIFT Robotics — Black Friday | Product hero, social icon row, black/neon-yellow theme |
+| 20 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-20-responsive.html" target="_blank">📧 View</a> | Ocean Supplements — Black Friday | Pricing tiers, benefit cards, testimonials, trust badges |
+| 21 | <a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-21-responsive.html" target="_blank">📧 View</a> | 1906 Wellness — Black Friday Sale | Typographic "SALE" hero, product section, purple/yellow palette |
 
 ---
 
