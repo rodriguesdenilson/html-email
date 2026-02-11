@@ -166,22 +166,22 @@ This portfolio showcases expertise across critical areas of email development:
 ## 🖼️ Visual Examples
 
 ### Project 1: Bomb Nutrition — Halloween Promo
-<a href="https://rodriguesdenilson.github.io/html-email/screenshot/project-2.png" target="_blank" rel="noopener noreferrer">📧 View</a>
+<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-2.png" target="_blank" rel="noopener noreferrer">📧 View</a>
 *Multi-CTA promotional layout with thematic branding*
 
 ### Project 10: Plaid — Lending Tools Launch
-<a href="https://rodriguesdenilson.github.io/html-email/screenshot/project-10.png" target="_blank" rel="noopener noreferrer">📧 View</a> 
+<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-10.png" target="_blank" rel="noopener noreferrer">📧 View</a> 
 *Hero section with partner logos and side-by-side content blocks*
 
 ### Project 12: Plaid — AI Tools Launch
-<a href="https://rodriguesdenilson.github.io/html-email/screenshot/project-12.png" target="_blank" rel="noopener noreferrer">📧 View</a>
+<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-12.png" target="_blank" rel="noopener noreferrer">📧 View</a>
 *Advanced layout with chat mockup and AI provider diagram*
 
 ### Project 13: DIME Beauty — Anniversary Sale
-<a href="https://rodriguesdenilson.github.io/html-email/screenshot/project-13.png" target="_blank" rel="noopener noreferrer">📧 View</a> 
+<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-13.png" target="_blank" rel="noopener noreferrer">📧 View</a> 
 *10-product grid layout with numbered badges*
 
-> 📁 All 42 screenshots (desktop + mobile for each template) available in <a href="https://rodriguesdenilson.github.io/html-email/screenshot/" target="_blank" rel="noopener noreferrer">`/screenshots/`</a> folder
+> 📁 All 42 screenshots (desktop + mobile for each template) available in <a href="https://rodriguesdenilson.github.io/html-email/screenshots/" target="_blank" rel="noopener noreferrer">`/screenshots/`</a> folder
 
 ---
 
