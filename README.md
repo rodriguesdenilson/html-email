@@ -164,17 +164,17 @@ This portfolio showcases expertise across critical areas of email development:
 ---
 
 ## 🖼️ Visual Examples
-<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-2.png" target="_blank" rel="noopener noreferrer">### Project 1: Bomb Nutrition — Halloween Promo</a>
+<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-2.png" target="_blank" rel="noopener noreferrer">### Project 1: Bomb Nutrition — Halloween Promo</a><br/>
 *Multi-CTA promotional layout with thematic branding*
 
-<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-10.png" target="_blank" rel="noopener noreferrer">### Project 10: Plaid — Lending Tools Launch</a> 
+<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-10.png" target="_blank" rel="noopener noreferrer">### Project 10: Plaid — Lending Tools Launch</a><br/>
 *Hero section with partner logos and side-by-side content blocks*
 
-<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-12.png" target="_blank" rel="noopener noreferrer">### Project 12: Plaid — AI Tools Launch</a>
+<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-12.png" target="_blank" rel="noopener noreferrer">### Project 12: Plaid — AI Tools Launch</a><br/>
 *Advanced layout with chat mockup and AI provider diagram*
 
-<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-13.png" target="_blank" rel="noopener noreferrer">### Project 13: DIME Beauty — Anniversary Sale</a> 
-*10-product grid layout with numbered badges*
+<a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-13.png" target="_blank" rel="noopener noreferrer">### Project 13: DIME Beauty — Anniversary Sale</a><br/>
+ *10-product grid layout with numbered badges*
 
 > 📁 All 42 screenshots (desktop + mobile for each template) available in <a href="https://rodriguesdenilson.github.io/html-email/screenshots/" target="_blank" rel="noopener noreferrer">`/screenshots/`</a> folder
 
