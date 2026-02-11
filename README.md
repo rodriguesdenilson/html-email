@@ -165,32 +165,23 @@ This portfolio showcases expertise across critical areas of email development:
 
 ## 🖼️ Visual Examples
 
-### Project 1: HTML Email Newsletter
-**Desktop View:** `screenshots/project-1-desktop.png`  
-**Mobile View:** `screenshots/project-1-mobile.png`  
-*Multi-CTA promotional, orange/dark theme*
-
-### Project 2: Bomb Nutrition — Halloween Promo
-**Desktop View:** `screenshots/project-2-desktop.png`  
-**Mobile View:** `screenshots/project-2-mobile.png`  
+### Project 1: Bomb Nutrition — Halloween Promo
+<a href="https://rodriguesdenilson.github.io/html-email/screenshot/project-2.png" target="_blank" rel="noopener noreferrer">📧 View</a>
 *Multi-CTA promotional layout with thematic branding*
 
-### Project 11: Plaid — Lending Tools Launch
-**Desktop View:** `screenshots/project-11-desktop.png`  
-**Mobile View:** `screenshots/project-11-mobile.png`  
+### Project 10: Plaid — Lending Tools Launch
+<a href="https://rodriguesdenilson.github.io/html-email/screenshot/project-10.png" target="_blank" rel="noopener noreferrer">📧 View</a> 
 *Hero section with partner logos and side-by-side content blocks*
 
-### Project 13: Plaid — AI Tools Launch
-**Desktop View:** `screenshots/project-13-desktop.png`  
-**Mobile View:** `screenshots/project-13-mobile.png`  
+### Project 12: Plaid — AI Tools Launch
+<a href="https://rodriguesdenilson.github.io/html-email/screenshot/project-12.png" target="_blank" rel="noopener noreferrer">📧 View</a>
 *Advanced layout with chat mockup and AI provider diagram*
 
-### Project 14: DIME Beauty — Anniversary Sale
-**Desktop View:** `screenshots/project-14-desktop.png`  
-**Mobile View:** `screenshots/project-14-mobile.png`  
+### Project 13: DIME Beauty — Anniversary Sale
+<a href="https://rodriguesdenilson.github.io/html-email/screenshot/project-13.png" target="_blank" rel="noopener noreferrer">📧 View</a> 
 *10-product grid layout with numbered badges*
 
-> 📁 All 42 screenshots (desktop + mobile for each template) available in `/screenshots/` folder
+> 📁 All 42 screenshots (desktop + mobile for each template) available in <a href="https://rodriguesdenilson.github.io/html-email/screenshot/" target="_blank" rel="noopener noreferrer">`/screenshots/`</a> folder
 
 ---
 
