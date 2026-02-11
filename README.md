@@ -6,6 +6,8 @@ A portfolio of **20 responsive, production-ready HTML email templates** built fo
 
 > **Note:** The templates do not include real images — the focus is entirely on HTML/CSS structure, layout, responsiveness, and cross-client compatibility. Image placeholders can be swapped for production assets before deployment.
 
+> **[📧 View All Templates Gallery](https://rodriguesdenilson.github.io/html-email/)** (GitHub Pages - Interactive Portfolio)
+
 ---
 
 ## 🎯 Key Features Demonstrated
@@ -223,7 +225,7 @@ This portfolio showcases expertise across critical areas of email development:
 4. **Test locally:**
    ```bash
    # Option 1: Open in browser
-   open project-1-responsive.html
+   open project-2-responsive.html
 
    # Option 2: Serve with Python
    python -m http.server 8000
