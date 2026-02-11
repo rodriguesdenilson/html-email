@@ -1,6 +1,6 @@
 # Email Templates
 
-A portfolio of **21 responsive, production-ready HTML email templates** built for cross-client compatibility. Each template represents a distinct brand and use case — from product launches to seasonal sales — demonstrating a range of email development techniques and layout patterns.
+A portfolio of **20 responsive, production-ready HTML email templates** built for cross-client compatibility. Each template represents a distinct brand and use case — from product launches to seasonal sales — demonstrating a range of email development techniques and layout patterns.
 
 > **Status:** ✅ Production-Ready | Last Updated: February 2026 | Actively Maintained
 
@@ -38,126 +38,120 @@ This portfolio showcases expertise across critical areas of email development:
 <tbody>
 <tr>
 <td>1</td>
-<td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-1-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
-<td>HTML Email Newsletter</td>
-<td>3-column feature grid, social icons, dark mode</td>
-</tr>
-<tr>
-<td>2</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-2-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Bomb Nutrition — Halloween Promo</td>
 <td>Multi-CTA promotional, orange/dark theme</td>
 </tr>
 <tr>
-<td>3</td>
+<td>2</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-3-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Hims — Healthcare</td>
 <td>Product cards, category sections</td>
 </tr>
 <tr>
-<td>4</td>
+<td>3</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-4-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Starbucks Rewards</td>
 <td>Rewards table, green brand palette</td>
 </tr>
 <tr>
-<td>5</td>
+<td>4</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-5-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Malibu Rum — Tropical Boo Bash</td>
 <td>Cocktail recipes, gradient backgrounds</td>
 </tr>
 <tr>
-<td>6</td>
+<td>5</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-6-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Oobli — Halloween Sale</td>
 <td>Discount promo, lime/orange palette</td>
 </tr>
 <tr>
-<td>7</td>
+<td>6</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-7-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Fleet Feet — Milestones</td>
 <td>Birthday gift offer, navy/gold theme</td>
 </tr>
 <tr>
-<td>8</td>
+<td>7</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-8-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Confused.com — App Download</td>
 <td>6-section feature showcase, dark theme</td>
 </tr>
 <tr>
-<td>9</td>
+<td>8</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-9-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>MINI — Motortober Rally</td>
 <td>Automotive event, financing offers</td>
 </tr>
 <tr>
-<td>10</td>
+<td>9</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-10-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Rest Bedding — Summer Sale</td>
 <td>Product showcase, comparison table</td>
 </tr>
 <tr>
-<td>11</td>
+<td>10</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-11-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Plaid — Lending Tools Launch</td>
 <td>Hero + partner logos, side-by-side content, teal/navy palette</td>
 </tr>
 <tr>
-<td>12</td>
+<td>11</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-12-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Calendly — Workflows Feature</td>
 <td>Feature checklist, milestone badge, blue brand palette</td>
 </tr>
 <tr>
-<td>13</td>
+<td>12</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-13-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Plaid — AI Tools Launch</td>
 <td>Chat mockup, AI provider diagram, testimonial, dark navy/cyan</td>
 </tr>
 <tr>
-<td>14</td>
+<td>13</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-14-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>DIME Beauty — Anniversary Sale</td>
 <td>Top-10 product grid, numbered badges, gold/charcoal theme</td>
 </tr>
 <tr>
-<td>15</td>
+<td>14</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-15-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Gainful — 7th Birthday Giveaway</td>
 <td>Hero product shot, minimal layout, beige/neutral palette</td>
 </tr>
 <tr>
-<td>16</td>
+<td>15</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-16-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>TALEA Beer Co. — 1st Anniversary</td>
 <td>Alternating image/text, taproom section, coral/sandy palette</td>
 </tr>
 <tr>
-<td>17</td>
+<td>16</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-17-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>A Book Apart — Spring Sale</td>
 <td>Discount badge, book list, red/coral accent</td>
 </tr>
 <tr>
-<td>18</td>
+<td>17</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-18-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Methodical — Japanese Green Tea</td>
 <td>Product launch hero, shop-by-category grid, sage/tan palette</td>
 </tr>
 <tr>
-<td>19</td>
+<td>18</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-19-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>SHIFT Robotics — Black Friday</td>
 <td>Product hero, social icon row, black/neon-yellow theme</td>
 </tr>
 <tr>
-<td>20</td>
+<td>19</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-20-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>Ocean Supplements — Black Friday</td>
 <td>Pricing tiers, benefit cards, testimonials, trust badges</td>
 </tr>
 <tr>
-<td>21</td>
+<td>20</td>
 <td><a href="https://rodriguesdenilson.github.io/html-email/email-templates/project-21-responsive.html" target="_blank" rel="noopener noreferrer">📧 View</a></td>
 <td>1906 Wellness — Black Friday Sale</td>
 <td>Typographic "SALE" hero, product section, purple/yellow palette</td>
@@ -172,7 +166,7 @@ This portfolio showcases expertise across critical areas of email development:
 ### Project 1: HTML Email Newsletter
 **Desktop View:** `screenshots/project-1-desktop.png`  
 **Mobile View:** `screenshots/project-1-mobile.png`  
-*3-column responsive grid with dark mode support*
+*Multi-CTA promotional, orange/dark theme*
 
 ### Project 2: Bomb Nutrition — Halloween Promo
 **Desktop View:** `screenshots/project-2-desktop.png`  
