@@ -176,7 +176,7 @@ This portfolio showcases expertise across critical areas of email development:
 <a href="https://rodriguesdenilson.github.io/html-email/screenshots/project-13.png" target="_blank" rel="noopener noreferrer">### Project 13: DIME Beauty — Anniversary Sale</a><br/>
  *10-product grid layout with numbered badges*
 
-> 📁 All 42 screenshots (desktop + mobile for each template) available in <a href="https://rodriguesdenilson.github.io/html-email/screenshots/" target="_blank" rel="noopener noreferrer">`/screenshots/`</a> folder
+> 📁 All 42 screenshots (desktop + mobile for each template) available in `/screenshots/`folder
 
 ---
 
